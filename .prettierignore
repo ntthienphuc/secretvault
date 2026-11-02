@@ -1,0 +1,8 @@
+.venv*/
+.data/
+.test-results/
+web/assets/fonts/
+*.svg
+build/
+dist/
+release/

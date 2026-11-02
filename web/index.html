@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f7fc" />
+    <meta
+      name="description"
+      content="Lưu trữ riêng tư và chia sẻ tệp dễ dàng trên máy tính, điện thoại với SecretVault."
+    />
+    <title>SecretVault · Không gian riêng của bạn</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/assets/fonts/BeVietnamPro-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/delivery.css" />
+    <link rel="stylesheet" href="/loading.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+    <div id="app">
+      <div class="boot-screen">
+        <div class="boot-mark"><span class="brand-shield">SV</span></div>
+        <div>
+          <p class="eyebrow">KHÔNG GIAN CỦA RIÊNG BẠN</p>
+          <h1>SecretVault</h1>
+          <p class="muted">Đang chuẩn bị không gian của bạn…</p>
+        </div>
+      </div>
+    </div>
+    <div id="toast-host" class="toast-stack" aria-live="polite"></div>
+    <div id="progress-host" aria-live="polite"></div>
+    <div id="download-host" class="download-host" aria-live="polite"></div>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

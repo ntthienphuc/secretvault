@@ -1,0 +1,12 @@
+SECRETVAULT
+
+Web: https://secretvault-online.vercel.app
+
+1. Tao tai khoan hoac dang nhap.
+2. Tai tep len Tep cua toi, hoac chon Gui tep.
+3. Gui truc tiep khi hai nguoi cung online; Gui de nhan sau khi nguoi nhan offline.
+4. Nguoi nhan mo Da nhan de tai ve hoac luu ban rieng vao kho.
+5. Dang xuat khi dung xong tren may dung chung.
+
+Web va ung dung Windows dung chung tai khoan va du lieu.
+Khong can cai Python tren may nguoi dung.

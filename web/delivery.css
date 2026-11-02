@@ -1,0 +1,337 @@
+/* Sending choices share one draft; receiving always explains ownership and quota. */
+.send-modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  max-width: 730px;
+  margin: 0 auto 24px;
+}
+.send-modes button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  padding: 14px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--muted);
+  min-height: 72px;
+}
+#send-content .send-panel {
+  max-width: 730px;
+  padding: 24px 28px;
+}
+#send-content .send-panel-heading {
+  margin-bottom: 20px;
+}
+#send-content .form-grid {
+  gap: 13px;
+}
+#send-content .drop-zone {
+  min-height: 105px;
+  padding: 15px;
+}
+#send-content .choose-stored > summary {
+  min-height: 34px;
+}
+.send-modes button.active {
+  border-color: #baa9ed;
+  background: #f0ebff;
+  color: var(--purple);
+  box-shadow: 0 3px 14px #6950d410;
+}
+.send-modes .icon {
+  width: 25px;
+  height: 25px;
+}
+.send-modes strong,
+.send-modes small {
+  display: block;
+}
+.send-modes strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+.send-modes small {
+  font-size: 11px;
+  margin-top: 6px;
+  line-height: 1.6;
+}
+.send-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 730px;
+  margin: 0 auto 20px;
+  background: #fff7e6;
+  border: 1px solid #ead5a5;
+  color: #72551f;
+  border-radius: 12px;
+  padding: 17px;
+}
+.send-notice p {
+  margin: 0;
+  font-size: 12px;
+}
+.send-quota {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #f6f5fa;
+  color: var(--muted);
+  font-size: 11px;
+}
+.send-quota .icon {
+  width: 18px;
+}
+.send-quota.quota-full {
+  background: #fff0ee;
+  color: #9a3933;
+}
+.choose-stored > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--purple);
+  font-size: 12px;
+  min-height: 44px;
+}
+.choose-stored .field-label {
+  margin: 7px 0 12px;
+}
+.send-success h2 {
+  margin-top: 20px;
+}
+.send-success p {
+  font-size: 13px;
+}
+.send-success .button-row {
+  margin-top: 24px;
+}
+.notification-menu {
+  position: relative;
+}
+.notification-menu > summary {
+  position: relative;
+  min-width: 44px;
+  min-height: 44px;
+}
+.notification-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--purple);
+  color: #fff;
+  font-size: 10px;
+  border-radius: 12px;
+  padding: 2px 5px;
+  min-width: 17px;
+  text-align: center;
+}
+.notification-panel {
+  position: absolute;
+  right: 0;
+  top: 54px;
+  width: 380px;
+  max-width: calc(100vw - 32px);
+  max-height: min(540px, 75dvh);
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 15px 55px #25273825;
+  z-index: 80;
+}
+.notification-heading {
+  padding: 17px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--line);
+}
+.notification-heading h2 {
+  font-size: 15px;
+  margin: 0;
+}
+.notification-heading .button {
+  font-size: 11px;
+  padding: 7px 10px;
+}
+.notification-panel article {
+  display: flex;
+  gap: 11px;
+  padding: 17px 18px;
+  border-bottom: 1px solid var(--line);
+}
+.notification-panel article.unread {
+  background: #f6f3ff;
+}
+.notification-panel article > .icon {
+  color: var(--purple);
+  margin-top: 2px;
+  width: 18px;
+}
+.notification-panel article > div {
+  min-width: 0;
+}
+.notification-panel p {
+  margin: 0;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.notification-panel small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 7px;
+}
+.notification-panel .text-button {
+  font-size: 11px;
+  min-height: 36px;
+}
+.notification-empty {
+  padding: 22px;
+}
+.receive-choices {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+}
+.receive-choice {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 90px;
+  padding: 17px;
+  text-align: left;
+  background: #faf9ff;
+  border: 1px solid #e3dcf4;
+  border-radius: 12px;
+  color: var(--purple);
+}
+.receive-choice > span {
+  flex: 1;
+  min-width: 0;
+}
+.receive-choice strong {
+  display: block;
+  font-size: 14px;
+}
+.receive-choice small {
+  display: block;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.receive-choice:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+.receipt-state {
+  color: var(--green) !important;
+}
+.trash-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.trash-actions [data-action="purge-file"] {
+  color: #a54740;
+}
+.modal [data-action="confirm-purge"] {
+  background: #a63f38;
+}
+@media (max-width: 680px) {
+  .send-modes {
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .send-modes button {
+    padding: 15px 12px;
+    gap: 8px;
+    align-items: flex-start;
+    min-height: 100px;
+  }
+  .send-modes button > .icon {
+    width: 19px;
+    height: 19px;
+    margin-top: 2px;
+  }
+  .send-modes strong {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .send-modes small {
+    font-size: 11px;
+  }
+  .send-notice {
+    padding: 14px;
+  }
+  .send-notice p {
+    font-size: 12px;
+  }
+  .send-quota {
+    align-items: flex-start;
+    line-height: 1.7;
+  }
+  .notification-panel {
+    right: -5px;
+    top: 49px;
+  }
+  .receive-choice {
+    padding: 15px;
+    min-height: 96px;
+  }
+  .receive-choice strong {
+    font-size: 13px;
+  }
+  .trash-row {
+    flex-wrap: wrap;
+  }
+  .trash-row > span {
+    min-width: 140px;
+  }
+  .trash-actions {
+    width: 100%;
+    padding-left: 42px;
+    justify-content: flex-start;
+  }
+  .trash-actions .button {
+    font-size: 11px;
+  }
+  .send-success .button-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .send-modes + .send-panel {
+    padding: 23px 20px;
+  }
+}
+
+.remember-option {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 12px;
+  color: var(--ink);
+  cursor: pointer;
+}
+.remember-option input {
+  width: 17px;
+  height: 17px;
+  margin: 2px 0 0;
+  accent-color: var(--purple);
+}
+.remember-option small {
+  display: block;
+  font-size: 10px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-top: 4px;
+}

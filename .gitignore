@@ -1,0 +1,32 @@
+# Local environments and credentials
+.venv*/
+.env
+.env.*
+!.env.example
+.local/
+.data/
+.test-results/
+.vercel/
+__pycache__/
+.ruff_cache/
+*.py[cod]
+*.db
+*.db-wal
+*.db-shm
+*.sqlite*
+*.pem
+*.key
+*.pfx
+*.p12
+*.log
+
+# Build output
+node_modules/
+build/
+dist/
+release/
+*.spec
+*.exe
+*.zip
+.DS_Store
+Thumbs.db

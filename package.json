@@ -1,0 +1,14 @@
+{
+  "name": "secretvault",
+  "version": "3.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Encrypted file storage and sharing with a Python backend.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node hosting/build-web.mjs",
+    "test:web": "node tests/web-regressions.mjs"
+  }
+}
